@@ -2,19 +2,24 @@ body {
     background: black;
 }
 
+
 h1 {
     color: white;
     text-align: center;
     font-size: 100px;
 }
 
-div {
+.tc {
+    color: white;
+}
+
+.div {
     width: 35px;
     height: 35px;
     background-color: black;
     position: relative;
     animation-name: square;
-    animation: square 5s infinite;
+    animation: square 3s infinite;
     animation-direction: normal;
     animation-iteration-count: infinite;
 }
@@ -27,14 +32,34 @@ div {
     animation-delay: 0.5s;
 }
 
-.sway {
- 
+#myDiv {
+    display: none;
+}
+
+.animate {
+    position: relative;
+    animation-name: animate;
+    animation-duration: 1s;
+}
+
+#loader {}
+
+@keyframes animate {
+    from {bottom: -180px; opacity: 0 }
+    to {bottom: 0px; opacity: 1}
 }
 
 
-@keyframes square { 
-0%  {background-color: white; left: -1px; top 0px;}
-100% {background-color: darkblue; left: 98.5%; top 0px;}
+@keyframes square {
+    0% {
+        background-color: white;
+        left: -1px;
+        top 0px;
+    } 100% {
+        background-color: darkblue;
+        left: 98.0%;
+        top 0px;
+    }
 }
 
 /* @keyframes square { 
@@ -44,5 +69,3 @@ div {
   60%  {background-color: white; left: -1px; top: 100px;}
   80%  {background-color: black; left: -1px; top: 0px;}
 } */
-
-

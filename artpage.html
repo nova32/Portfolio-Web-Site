@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Art</title>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
 
 <body>
+    <ul class="ul-in">
+        <li class="li-in"><a href="contact.html">Contact</a></li>
+        <li class="li-in"><a href="portfolio.html">Portfolio</a></li>
+        <li class="li-in"><a href="resume.html">Resume</a></li>
+        <li class="dropdown li-in">
+            <a href="about_me.html" class="dropbtn">About Me</a>
+            <div class="dropdown-content">
+                <a href="artpage.html">Art</a>
+            </div>
+        </li>
+        <li class="li-in"><a href="index.html">Home</a></li>
+    </ul>
 
 
 
 
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img src="abbey-ancient-architecture-415932.jpg" alt="" style="width:100%">
+            <div class="texta">Text 1</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="architecture-bridge-connection-417054.jpg" alt="" style="width:100%">
+            <div class="texta">Text 2</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="administration-ancient-architecture-358484.jpg" alt="" style="width:100%">
+            <div class="texta">Text 3</div>
+        </div>
+
+        <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, dicat persecuti per et, in utroque maiorum luptatum ius. Vim an scaevola principes. Molestiae interesset referrentur ea nec, veritus dolorem sit ad. Sit in veri gloriatur honestatis, mel quas definitionem ut. Sea an rebum eripuit abhorreant. Pro partem apeirian instructior ea, possit interesset vel an. Nam an nisl scaevola tractatos, ut pri discere tractatos, cum cu dico inermis graecis. Maiorum laboramus voluptatibus his in, te quo amet delenit officiis. In vim mollis vocent corpora, te tamquam iuvaret nominavi usu. Vim impetus eruditi pertinax ea. An affert nemore deleniti cum. Wisi tantas sadipscing nam ut. Harum putant vivendum an per, vix malis conclusionemque cu, ius cu labore iriure. An pro melius oblique discere, graeco eligendi consetetur sed eu. Cu eum quaeque sapientem, vel ea dolorum menandri electram. Nisl persecuti ex pri, wisi habemus tractatos ne vel, indoctum molestiae no usu. Natum aperiam similique ei nec, pro forensibus adipiscing reformidans cu, nullam causae vel ne. Pro in impedit graecis inimicus, porro appetere sit ad, sea ad modo nibh. Qui te facer torquatos tincidunt, his ex postea argumentum. At sed tation forensibus intellegam. At volutpat reprehendunt mea. Facete iriure mei ut, vim</p>
 
 
 
+    <div class="footer">
+        <p>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu aibfabfabhsfbaos fbs uoasb oasb obaso basoib aosifoibnfsioanh fioha iofhasfhuh auigfu asdgnasfjkbasfjbasbfassjkabfjbfjasbfjksfnklsnfklasfnklanfk ga gffgfgggfgfuisgfuisa asguifguiasfgufsguifsguif gfui gfui gfii gufas gifsiogfsgifasgiofasgioafgioafgiuf iguf guasfguf sgu</p>
+    </div>
 
 
-    <p>These are some pieces of art that I have created.</p>
 
+    <script>
+        showSlides(1);
 
-
-
+    </script>
 
 </body>
 
